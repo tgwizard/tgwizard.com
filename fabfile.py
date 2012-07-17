@@ -4,6 +4,8 @@ from fabric.api import *
 env.hosts = ['adam@176.58.115.169']
 
 def deploy():
+	local("git push")
+
 	code_dir = "/var/www/tgwizard.com"
 	with cd(code_dir):
 		run("git pull -f")
