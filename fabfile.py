@@ -1,7 +1,7 @@
 from fabric.api import *
 
 # TODO: change this to proper domain name
-env.hosts = ['buffy']
+env.hosts = ['tgwizard.com']
 
 def deploy():
 	local("git push")
