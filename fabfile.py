@@ -1,7 +1,7 @@
 from fabric.api import *
 
 # TODO: change this to proper domain name
-env.hosts = ['adam@176.58.115.169']
+env.hosts = ['buffy']
 
 def deploy():
 	local("git push")
